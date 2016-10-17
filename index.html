@@ -1,31 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang='en'>
   <head>
-    <link rel="stylesheet" href="reset.css" >
-    <link rel="stylesheet" href="styles.css" >
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <title>Idea Box</title>
+    <title>2DoBox-Pivot</title>
   </head>
 
-
-
   <body>
-    <div class="hero">
-      <h1>idea<span>box</span></h1>
-      <input class="title-input" type="text" name="title" value="Title"><br>
-      <input class="body-input" type="text" name="body" value="Body"><br>
-      <input class="save-btn" type="button" name="save" value="save">
+    <header class="hero">
+      <h1>2DoBox</h1>
+      <input class="title-input" type="text" placeholder="Title" aria-label='input title' tabindex="0"><br>
+      <input class="task-input" type="text" placeholder="Task" aria-label='input task' tabindex="0"><br>
+      <input class="save-btn" type="button" value="save" aria-label='save' tabindex="0" disabled>
+    </header>
 
-    </div>
+    <section class="list">
+      <section class="count">
+        <h4 class="char-count-output" role='none'></h4>
+        <h5 class="todo-count-output" role='none'></h5>
+      </section>
 
-    <div class="list">
-      <input class="search-input" type="text" name="search" value="Search">
-      <ul class= "idea-list"></ul>
-    </div>
+      <nav class="search-section">
+        <input class="search-input" type="text" tabindex="0" placeholder="search TODOs" aria-label='search todos'>
+      </nav>
 
+      <nav class="filter-by">
+        <h3 class="filter-title">Filter by:</h3>
+        <label for="critical-filter" tabindex="0">
+          <span>Critical<input type="radio" name="filter"  id="critical-filter" aria-labelledby="critical-filter" class="critical-btn" value="Critical"></span>
+        </label>
+        <label for="high-filter" tabindex="0">
+          <span>High<input type="radio" name="filter" id="high-filter" aria-labelledby="high-filter" class="high-btn" value="High"></span>
+        </label>
+        <label for="normal-filter" tabindex="0">
+          <span>Normal<input type="radio" name="filter" id="normal-filter" aria-labelledby="normal-filter" class="normal-btn" value="Normal"></span>
+        </label>
+        <label for="low-filter" tabindex="0">
+          <span>Low<input type="radio" name="filter" id="low-filter" aria-labelledby="low-filter" class="low-btn" value="Low"></span>
+        </label>
+        <label for="none-filter" tabindex="0">
+          <span>None<input type="radio" name="filter" id="none-filter" aria-labelledby="none-filter" class="none-btn" value="None"></span>
+        </label>
+        <button type="button" class="remove-filters-btn" tabindex="0" aria-label=“remove-filters-btn”>Remove filters</button>
+      </nav>
+
+      <nav class="show-completed-delete-section">
+        <input class="show-completed-btn" type="button" tabindex="0" value="show completed">
+        <button class="delete-all-todos" tabindex="0" type="button">delete all</button>
+      </nav>
+
+      <ul class= "todo-list"></ul>
+
+      <button type="button" class="show-more-todos">show more...</button>
+    </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="scripts.js"></script>
+    <script src="main.bundle.js"></script>
   </body>
 </html>

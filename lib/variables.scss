@@ -1,0 +1,50 @@
+//main
+$main-margin: 10px;
+$main-padding: 50px;
+
+//colors
+$color-cream: #F4F7F7;
+$color-light-blue: #79A8A9;
+$color-medium-blue: #4D727E;
+$color-dark-blue: #1F4E5F;
+$color-red: rgb(177, 44, 44);
+$color-light-red: rgb(179, 115, 118);
+
+//input fields
+$input-width: 35em;
+$input-height:
+30px;
+$input-background-color: $color-cream;
+$input-font-size: 18px;
+$input-color: $color-dark-blue;
+$input-text-align: left;
+
+//buttons
+$button-font-size: 12px;
+$button-background-color: $color-dark-blue;
+$button-font-color: white;
+$button-width: 80px;
+$save-remove-btn-width: 20em;
+$delete-color: $color-red;
+$delete-completed-width: 8em;
+$button-hover-color: $color-medium-blue;
+$delete-button-hover-color: $color-light-red;
+$filter-by-selected: $color-medium-blue;
+
+//texts
+$page-text-color: $color-dark-blue;
+$page-text-size: 20px;
+$page-font-weight: bold;
+
+//borders
+$border-bottom: 1px solid #D1D3D4;
+
+//list items
+$tasks-width: 100%;
+$title-width: 100%;
+
+//completed items
+$completed-color: $color-red;
+
+//responsiveness
+$break-large: 570px;
