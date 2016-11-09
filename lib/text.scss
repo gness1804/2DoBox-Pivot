@@ -1,0 +1,47 @@
+@import "variables.scss";
+
+@mixin h1 {
+  color: $color-dark-blue;
+  margin-bottom: $main-margin;
+  font-size: 70px;
+  font-weight: $page-font-weight;
+}
+
+@mixin count {
+  height: 20px;
+  color: $page-text-color;
+  font-weight: $page-font-weight;
+  font-size: $page-text-size + 5;
+  padding: $main-padding;
+}
+
+@mixin filter-by-h3 {
+  color: $page-text-color;
+  font-weight: $page-font-weight;
+  font-size: $page-text-size + 5;
+}
+
+@mixin title-for-each-todo {
+  display: inline-block;
+  text-align: left;
+  float: left;
+  margin-left: $main-margin;
+  font-size: $page-text-size + 15;
+  height: 100%;
+}
+
+@mixin task-output-field-for-each-todo {
+  float: left;
+  text-align: left;
+  width: $tasks-width;
+  height: 30px;
+  margin: $main-margin;
+  height: 100%;
+}
+
+@mixin importance-rating-output {
+  display: block;
+  margin: $main-margin;
+  width: 200px;
+  display: inline-block;
+}

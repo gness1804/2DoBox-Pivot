@@ -1,0 +1,8 @@
+@import "variables.scss";
+
+@mixin filter-by-label {
+  margin: $main-margin;
+  font-size: $page-text-size;
+  outline: !important;
+  outline-color: red;
+}

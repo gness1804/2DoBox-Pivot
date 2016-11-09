@@ -1,0 +1,23 @@
+@import "variables.scss";
+
+@mixin title-and-task-inputs {
+  width: $input-width;
+  height: $input-height;
+  text-align: $input-text-align;
+  font-size: $page-text-size;
+  background-color: $input-background-color;
+  color: $input-color;
+  outline: !important;
+  outline-color: red;
+}
+
+@mixin search-input {
+  width: $input-width;
+  height: $input-height;
+  text-align: $input-text-align;
+  font-size: $page-text-size;
+  background-color: $input-background-color;
+  color: $input-color;
+  outline: !important;
+  outline-color: red;
+}

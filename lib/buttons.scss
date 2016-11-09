@@ -1,0 +1,87 @@
+@import "variables.scss";
+
+button {
+  background-color: $button-background-color;
+  color: $button-font-color;
+  outline: !important;
+  outline-color: red;
+  border: none;
+  font-size: $page-text-size;
+  width: $button-width;
+
+  &:hover{
+    background-color: $button-hover-color;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: $break-large){
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: $input-width/2;
+  }
+
+} //end of button
+
+@mixin save-btn {
+  background-color: $button-background-color;
+  color: $button-font-color;
+  outline: !important;
+  outline-color: red;
+  border: none;
+  width: $save-remove-btn-width;
+  font-size: $page-text-size;
+}
+
+@mixin remove-filters-btn {
+  background-color: $delete-color;
+  width: $delete-completed-width;
+}
+
+@mixin show-completed-btn {
+  background-color: $button-background-color;
+  color: $button-font-color;
+  outline: !important;
+  outline-color: red;
+  border: none;
+  font-size: $page-text-size;
+  width: $delete-completed-width;
+}
+
+@mixin delete-all-todos {
+  width: $delete-completed-width;
+  background-color: $delete-color;
+}
+
+@mixin delete-indiv-todo-button {
+  float: right;
+  color: $color-cream;
+  background-color: $delete-color;
+  width: $delete-completed-width;
+}
+
+@mixin upvote-and-downvote-buttons {
+  float: left;
+  width: $delete-completed-width;
+  background-color: $button-background-color;
+}
+
+@mixin completed-btn {
+  float: right;
+  font-size: $page-text-size;
+  font-weight: normal;
+  background-color: $button-background-color;
+  color: $color-cream;
+  outline: none;
+  border: none;
+  display: inline-block;
+  width: $delete-completed-width;
+}
+
+@mixin show-more-todos-button {
+  width: $delete-completed-width;
+  font-size: $page-text-size;
+  color: $color-cream;
+  font-weight: normal;
+}

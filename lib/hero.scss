@@ -1,0 +1,36 @@
+@import "variables.scss";
+@import "text.scss";
+@import "input-fields.scss";
+
+.hero {
+  background-color: $color-light-blue;
+  height: 100%;
+
+  h1 {
+    @include h1;
+  }
+
+  .title-input, .task-input {
+    @include title-and-task-inputs;
+
+    @media screen and (max-width: $break-large){
+      width: $input-width/2;
+    }
+
+  } //end of title-input, task-input
+
+  .save-btn {
+    @include save-btn;
+
+    &:hover{
+      background-color: $button-hover-color;
+      cursor: pointer;
+    }
+
+    @media screen and (max-width: $break-large){
+      width: $input-width/2;
+    }
+
+  } //end of save-btn
+
+} //end of hero
